@@ -27,10 +27,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #222;
     position: sticky;
     top: 0;
-    background: var(--kleur-wit);
+    background: #111;
     z-index: 100;
 }
 
@@ -48,7 +48,7 @@ header {
 nav a {
     margin-left: 30px;
     text-decoration: none;
-    color: var(--kleur-grijs);
+    color: #aaa;
     font-weight: 500;
     transition: color 0.2s;
 }

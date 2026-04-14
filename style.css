@@ -147,6 +147,7 @@ footer {
 .proces {
     background: var(--kleur-lichtgrijs);
     padding: 80px 40px;
+    scroll-margin-top: 100px;
 }
 
 .sectie-titel {
@@ -272,6 +273,7 @@ footer {
     background: var(--kleur-lichtgrijs);
     padding: 80px 40px;
     text-align: center;
+    scroll-margin-top: 100px;
 }
 
 .contact h2 {

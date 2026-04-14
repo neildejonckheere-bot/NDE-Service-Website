@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over mij — NDE Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --kleur-donker: #1a1a1a;
+            --kleur-oranje: #fa4e42;
+            --kleur-grijs: #6b6b6b;
+            --kleur-lichtgrijs: #f5f5f5;
+            --kleur-wit: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--kleur-donker);
+            line-height: 1.6;
+            background: var(--kleur-wit);
+        }
+
+        /* ============ HEADER ============ */
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--kleur-donker);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--kleur-oranje);
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: var(--kleur-grijs);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.actief {
+            color: var(--kleur-oranje);
+        }
+
+        /* ============ OVER MIJ CONTENT ============ */
+        .over-mij {
+            padding: 80px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .over-mij h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+
+        .intro {
+            font-size: 22px;
+            color: var(--kleur-grijs);
+            margin-bottom: 50px;
+            border-left: 4px solid var(--kleur-oranje);
+            padding-left: 20px;
+        }
+
+        .foto-placeholder {
+            background: var(--kleur-lichtgrijs);
+            height: 300px;
+            border-radius: 12px;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px dashed #ccc;
+            color: var(--kleur-grijs);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .verhaal p {
+            font-size: 18px;
+            color: var(--kleur-grijs);
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .verhaal strong {
+            color: var(--kleur-donker);
+        }
+
+        /* ============ EINDWERK SECTIE ============ */
+        .eindwerk {
+            background: var(--kleur-lichtgrijs);
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .eindwerk-foto {
+            background: #ddd;
+            height: 200px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #bbb;
+            color: var(--kleur-grijs);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .eindwerk-tekst h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .eindwerk-tekst p {
+            color: var(--kleur-grijs);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* ============ CTA SECTIE ============ */
+        .cta {
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--kleur-donker);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .cta h3 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #aaa;
+            margin-bottom: 24px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 14px 28px;
+            background: var(--kleur-oranje);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .cta a:hover {
+            background: #e04438;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background: #111;
+            color: #666;
+            padding: 30px 40px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 80px;
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 700px) {
+            .over-mij h1 {
+                font-size: 32px;
+            }
+
+            .eindwerk {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header>
+        <a href="index.html" class="logo">NDE<span>Service</span></a>
+        <nav>
+            <a href="index.html#proces">Hoe het werkt</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="over-mij.html" class="actief">Over mij</a>
+        </nav>
+    </header>
+
+    <!-- ============ OVER MIJ ============ -->
+    <section class="over-mij">
+        
+        <h1>Over mij</h1>
+        
+        <p class="intro">Ik ben Neil — de persoon achter NDE Service. Geen groot bedrijf, gewoon iemand die graag met metaal werkt en problemen oplost.</p>
+
+        <div class="foto-placeholder">
+            📷 FOTO PLACEHOLDER<br><br>
+            Foto van jezelf (optioneel)<br>
+            of van jou aan het werk
+        </div>
+
+        <div class="verhaal">
+            <p><strong>Ik heb mijn eerste lasboog getrokken toen ik 12 was.</strong> Sindsdien ben ik nooit meer gestopt. Na mijn opleiding mechanische vormgevingstechnieken aan het VTI in Ieper wist ik: ik wil iets met metaal blijven doen.</p>
+            
+            <p>Lassen zit in mijn vingers — inmiddels meer dan 17 jaar. Maar draaien en frezen? Dat is waar ik het liefst mee bezig ben. Precisiewerk. Iets maken dat klopt tot op de honderdste millimeter.</p>
+            
+            <p>Met NDE Service combineer ik die twee: <strong>ik kom ter plaatse, las versleten boringen op, en kottereer ze terug naar originele maat.</strong></p>
+
+            <p>Geen grote firma, geen tussenpersonen. Je belt mij, ik kom langs, ik los het op. Ik draag mijn hart op de mouw — ook in mijn werk.</p>
+        </div>
+
+        <!-- ============ EINDWERK ============ -->
+        <div class="eindwerk">
+            <div class="eindwerk-foto">
+                📷 FOTO<br>Eindwerk VTI
+            </div>
+            <div class="eindwerk-tekst">
+                <h3>Mijn eindwerk</h3>
+                <p>Om mijn opleiding aan het VTI Ieper af te ronden, maakte ik [KORTE BESCHRIJVING VAN JE EINDWERK]. Een project waar ik nog steeds trots op ben — het toont wat mogelijk is met de juiste combinatie van techniek en geduld.</p>
+            </div>
+        </div>
+
+        <!-- ============ CTA ============ -->
+        <div class="cta">
+            <h3>Vraag of project?</h3>
+            <p>Bel of mail me — ik antwoord zelf.</p>
+            <a href="tel:+32492535086">Bel: 0492 53 50 86</a>
+        </div>
+
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        © 2024 NDE Service — Neil Dejonckheere — BE1007.445.265
+    </footer>
+
+</body>
+</html>
